@@ -2,6 +2,8 @@
 
 ## 研修用資料
 
+* [Web 基礎](https://github.com/Kazuma/Textbook/blob/master/the-learning-web.md)
+
 ## 参考資料
 
 ## ライセンス

@@ -3,6 +3,7 @@
 ## 研修用資料
 
 * [Web 基礎](https://github.com/Kazuma/Textbook/blob/master/the-learning-web.md)
+* [HTML を学ぼう](https://github.com/Kazuma/Textbook/blob/master/html-tutorial.md)
 
 ## 参考資料
 

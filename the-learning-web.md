@@ -110,6 +110,15 @@ HTTP クライアントとして最もよく使用されているのが Web ブ�
 6. 処理結果をクライアントへ返す
 7. クライアントの Web ブラウザ等で処理結果を画面に表示する
 
+ブラウザの拡張機能を使うと流れがわかるよ！設定しよう！
+
+> 使い方は [Google](http://www.google.co.jp) 先生で調べてね♪
+
+* Firefox - [Firebug](https://addons.mozilla.org/ja/firefox/addon/firebug/)
+* Firefox - [Live HTTP Headers](https://addons.mozilla.org/ja/firefox/addon/live-http-headers/)
+* Chrome - [Google Chrome Developer Tools](https://developers.google.com/chrome-developer-tools/?hl=ja)
+* Safari - [Safari Developer Tools](https://developer.apple.com/jp/technologies/safari/developer-tools.html)
+
 ## プロトコルとは
 
     ネットワークを介してコンピュータ同士が通信を行う上で、相互に決められた約束事の集合。

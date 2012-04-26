@@ -57,10 +57,7 @@ HTML の特徴として
 
     メンテナンスしやすい構造
 
-しかし、世界には直感的でなくメンテするのが嫌になる HTML が溢れている。
-
 # HTML の基本
-
 
 ## DTD 宣言
 
@@ -279,7 +276,7 @@ HTML5 では HTML4 になかった新たな要素が追加され、また、HTML
 * \<progress>  タスク完了までの進行状況を示す
 * \<section>  -  一つのセクションであることを示す
 * \<source>  -  動画や音声などのURLや種類を指定する
-* \<summary>  -  \<details> の内容の要約を示す                                                                                        
+* \<summary>  -  \<details> の内容の要約を示す 
 * \<time>  -  日付や時刻を正確に示す
 * \<video>  -  動画を再生する
 * \<rp>  -  ルビを囲む記号を指定する
@@ -295,7 +292,7 @@ HTML5 では HTML4 になかった新たな要素が追加され、また、HTML
 * \<applet>  -  JAVAアプレットを挿入する
 * \<basefont>  -  テキストの基準サイズ・基準色・基準フォントを指定する
 * \<bgsound>  -  効果音・BGMを鳴らす（IE独自の仕様）
-* \<big>  -  テキストのサイズをひとまわり大きくする                                                                                   
+* \<big>  -  テキストのサイズをひとまわり大きくする 
 * \<blink>  -  文字を点滅させる（NN独自）
 * \<center>  -  センタリングする
 * \<dir>  -  リストを表示する
@@ -362,20 +359,7 @@ HTML5 を使って Web システムでよく目にする「ユーザー登録画
 * ブラウザは Chrome を使用すること
 * 文字コードは **UTF-8** で保存すること
 * 拡張子は **.html* にすること
-* デスクトップに **regist.html** という名前でファイルを作成する。作成する際に以下のテンプレートを使用すること
-
-```html
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>なんとかかんとかサービス</title>
-  </head>
-  <body>
-  /* ここに書いていく */
-  </body>
-</html>
-```
+* デスクトップに **regist.html** という名前でファイルを作成する
 
 ## header 部
 
@@ -393,116 +377,10 @@ header にはセクションの目次や検索フォーム、あるいはロゴ�
 </header>
 ```
 
-### \<ol> \<li>
-
-\<ol> は順序ありリストで階層構造のある情報を扱う時に使用する  
-\<li> はリストの項目を記述する際に使用する。 リスト表示したい項目に \<li> タグをつけて \<ol>～ \</Ool> の間に記述する
-
-```html
-<ol>
-  <li>hoge</li>
-  <li>fuga</li>
-  <li>foo</li>
-</ol>
-```
-が以下のように表示される
-
-1. hoge
-2. fuga
-3. foo
-
-### \<h1>
-
-\<h1> は見出し。他にも \<h2>, \<h3>, \<h4> などがある
-
 ## section 部
 
 section はウェブページ内のその部分が、一つのセクションであることを示す際に使用する  
 article は内容が単体で完結するセクションであることを示す際に使用する
-
-### \<div>
-
-\<div> はそれ自身は意味を持っていないが、\<div> ~ \</div> で囲んだ範囲をひとかたまりとして扱うためのブロック要素
-
-    ブロック要素とは、見出し、段落、リスト、フォームなどのひとつのまとまった単位として表される要素
-    一般的なブラウザでは前後に改行が入って表示される
-
-```html
-<div>
-  <p>hogehoge</p>
-</div>
-<div>
-  <p>fugafuga</p>
-</div>
-```
-
-ただ \<div> とだけ書くと、複数あった場合に識別しにくいため、 class を記述して他の div と識別する
-
-```html
-<div class="hoge">
-  <p>hogehoge</p>
-</div>
-<div class="fuga">
-  <p>fugafuga</p>
-</div>
-```
-
-### \<input>
-
-\<input> はテキスト入力欄や実行ボタン等、 フォーム（ \<form> ~ \</form> ）を構成する部品を作成するタグで、type 属性の値により、1行テキストボックス・チェックボックス・ラジオボタン・実行ボタン・リセットボタン等の部品となる
-
-* type="text" - 1行テキストボックス
-* type="password" - パスワード入力ボックス。アスタリスク (***) で表示される
-* type="radio" - ラジオボタン
-* type="checkbox" - チェックボックス
-* type="button" - 汎用ボタン
-* type="submit" - 送信ボタン
-
-```html
-<input type="text">
-<input type="password">
-<input type="radio">
-<input type="checkbox">
-<input type="button">
-<input type="submit">
-```
-
-\<input> に関しても同様に name と id を記述する  
-id を指定することでひとつひとつの部品を識別しやすくなる
-
-```html
-<input type="text" name="user_id" id="user_id">
-<input type="text" name="user_name" id="user_name">
-```
-
-### \<label>
-
-\<label> はフォームの構成部品（一行テキストボックス・チェックボックス・ラジオボタン等）と、 その項目名（ラベル）を明確に関連付けるための要素
-
-```html
-<label>hogehoge</label>
-```
-
-### \<select>
-
-\<select> はセレクトボックスを作成するタグ
-
-```html
-<select name="number">
-  <option value="" selected>選択せよ</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-</select>
-```
-\<select> ~ \</select> 内の \<option> に選択肢を記述する
-
-### \<textarea>
-
-\<textarea> は複数行の入力フィールドを作成するタグ
-
-```html
-<textarea rows="4" cols="40">ここにあれやこれやを書いてください</textarea>
-```
 
 ## nav 部
 
@@ -518,21 +396,6 @@ nav はウェブサイト内の他のページへのリンクや、ページ内�
 </nav>
 ```
 
-\<ul> は順序なしリストで階層構造のある情報を扱う時に使用する
-
-```html
-<ul>
-  <li>hoge</li>
-  <li>fuga</li>
-  <li>foo</li>
-</ul>
-```
-が以下のように表示される
-
-* hoge
-* fuga
-* foo
-
 ## footer 部
 
 footer はそのセクションに関する情報を扱う時に使用し、一般的には、誰が書いたのか、関連文書へのリンク、著作権などの情報が含まれる
@@ -544,31 +407,6 @@ footer はそのセクションに関する情報を扱う時に使用し、一�
   </p>
 </footer>
 ```
-
-#### \<p>
-
-\<p> はひとつの段落であることを表す
-
-```html
-<p>
-おなかすいたおなかすいた
-やばいやばい
-</p>
-<p>
-やばいやばい
-おなかすいたおなかすいた
-</p>
-```
-
-が以下のように段落ごとに表示される
-
-<pre>
-おなかすいたおなかすいたやばいやばい
-
-やばいやばいおなかすいたおなかすいた
-</pre>
-
-
 
 HTML でページを作れたら、次は CSS を使って見た目をよくしよう！
 

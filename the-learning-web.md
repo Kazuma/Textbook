@@ -160,6 +160,21 @@ POP との違いは
 
 [GMail](http://mail.google.com/mail) や [MobileMe](http://www.apple.com/jp/mobileme/) などで採用されている。
 
+## OSI 参照モデル
+
+OSI 参照モデルとは
+
+    国際標準化機構(ISO)によって策定された、コンピュータの持つべき通信機能を階層構造に分割したモデルである。
+    OSI基本参照モデル、OSIモデルなどとも呼ばれ、通信機能（通信プロトコル）を7つの階層に分けて定義している。
+
+## OSI 参照モデル7階層
+
+<img src="https://cacoo.com/diagrams/6f3p1xNvmOy69a0b-AAF42.png" align="center">
+
+### アプリケーション層
+
+    アプリケーション層は、アプリケーションプロセスのための共通アプリケーションサービスへ直接接続して実行する。またプレゼンテーション層に対して要求も行う。
+
 ## どこで決めてるの？
 
 IETF (Internet Engineering Task Force)

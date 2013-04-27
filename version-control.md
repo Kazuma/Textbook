@@ -39,15 +39,17 @@
 
 ### 中央集中型
 
-**CVS (Concurrent Versions System)**
+[**CVS (Concurrent Versions System)**](http://cvs.nongnu.org/)
 
     複数人が同時に同じファイルを編集することができ、編集した内容が競合していなければ両方の変更を自動的に統合できる
     また、1つのバージョンに対して別々の変更を加えるためにバージョンを分岐させることも可能
 
-**SVN (Subversion)**
+[**SVN (Subversion)**](http://subversion.apache.org/)
 
     CVS を参考に開発されたバージョン管理システム
     CVS から変更された点は、リビジョンの番号のつけ方、メタデータを付与できるようになった点、Webブラウザなどとの連携を図ることが可能になっている点などがある
+
+![center](https://cacoo.com/diagrams/i86OmhsqEGTe9z6l-9E415.png)
 
 ### 分散型
 
@@ -60,10 +62,13 @@
 
     Python で実装されたクロスプラットフォームのバージョン管理システム
 
+![dispersant](https://cacoo.com/diagrams/QW4UlHpynPxWyHbL-7357F.png)
 
 ## 管理方法
 
-Subversion(中央集中型)、Git(分散型) それぞれの管理方法
+ここでは Subversion(中央集中型), Git(分散型) それぞれの管理方法と主なコマンドを紹介する
+
+クライアントの環境は [Ubuntu](http://www.ubuntu.com/) を想定
 
 ### Subversion
 
@@ -73,54 +78,54 @@ Subversion(中央集中型)、Git(分散型) それぞれの管理方法
 
 #### インストール方法
 
-`apt-get install subversion`
+`$ apt-get install subversion`
 
 #### リポジトリをローカルへコピー
 
-`svn checkout http://hoge.co.jp/repos/hoge hoge/`
+`$ svn checkout http://hoge.co.jp/repos/hoge`
 
 #### ファイルを追加
 
-`svn add hoge.txt`
+`$ svn add hoge.txt`
 
 #### ファイルをコミット
 
-`svn commit -m 'add hoge.txt' hoge.txt`
+`$ svn commit -m 'add hoge.txt' hoge.txt`
 
 #### リポジトリの更新
 
-`svn update`
+`$ svn update`
 
 ### Git
 
-* 中央リポジトリからコピーする
+* 中央リポジトリからローカルへリポジトリをコピーする
 * コピーしたリポジトリを編集し、コンテンツの修正、追加、削除を行う
 * ローカルへコミットする
 * 中央リポジトリへ変更内容を反映させる
 
 #### インストール方法
 
-`apt-get install git`
+`$ apt-get install git`
 
 #### リポジトリをローカルリポジトリへコピー
 
-`git clone git://hoge.co.jp/hoge`
+`$ git clone git://github.com/User/hoge.git`
 
 #### ファイルを追加
 
-`git add hoge.txt`
+`$ git add hoge.txt`
 
 #### ファイルをコミット
 
-`git commit -m 'add hoge.txt'`
+`$ git commit -m 'add hoge.txt'`
 
 #### 中央リポジトリへ変更を適用
 
-`git push`
+`$ git push origin <repo-name>`
 
 #### リポジトリの更新
 
-`git pull`
+`$ git pull`
 
 ### おまけ
 
